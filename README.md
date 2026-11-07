@@ -42,7 +42,7 @@ import { BLEHandler } from "easy-miniprogram-bluetooth";
 本库自带一份接入 Skill，覆盖依赖检查与安装、分层封装模式、调用流程、易踩坑清单、微信 BLE 错误码兜底与可复制示例。一行命令即可装到支持 Skills 的环境中：
 
 ```bash
-npx skills add https://github.com/whitehair-failure/easy-miniprogram-bluetooth --skill easy-miniprogram-bluetooth
+npx skills add https://github.com/ShiroPrism/easy-miniprogram-bluetooth --skill easy-miniprogram-bluetooth
 ```
 
 > 该 Skill 对应库版本 **0.4.1**，示例与 API 说明均以该版本为准。
@@ -425,7 +425,7 @@ npm run format:check  # Prettier 校验
 
 ## 文档
 
-- 接入 Skill 安装：`npx skills add https://github.com/whitehair-failure/easy-miniprogram-bluetooth --skill easy-miniprogram-bluetooth`
+- 接入 Skill 安装：`npx skills add https://github.com/ShiroPrism/easy-miniprogram-bluetooth --skill easy-miniprogram-bluetooth`
 - [接入指南（Skill）](./skills/easy-miniprogram-bluetooth/SKILL.md) — 依赖安装、分层封装模式、调用流程、易踩坑清单、错误码表
 - [完整 API 契约](./skills/easy-miniprogram-bluetooth/references/api-reference.md)
 - [错误处理与错误码](./skills/easy-miniprogram-bluetooth/references/error-handling.md)

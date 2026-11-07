@@ -44,12 +44,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/whitehair-failure/easy-miniprogram-bluetooth"
+    "url": "https://github.com/ShiroPrism/easy-miniprogram-bluetooth"
   },
   "bugs": {
-    "url": "https://github.com/whitehair-failure/easy-miniprogram-bluetooth/issues"
+    "url": "https://github.com/ShiroPrism/easy-miniprogram-bluetooth/issues"
   },
-  "homepage": "https://github.com/whitehair-failure/easy-miniprogram-bluetooth#readme",
+  "homepage": "https://github.com/ShiroPrism/easy-miniprogram-bluetooth#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",

@@ -12,7 +12,7 @@
 | 类型     | TypeScript 库（微信小程序 BLE 工具封装）                        |
 | 目标平台 | 微信小程序                                                      |
 | 构建工具 | Rollup + TypeScript                                             |
-| 仓库     | https://github.com/whitehair-failure/easy-miniprogram-bluetooth |
+| 仓库     | https://github.com/ShiroPrism/easy-miniprogram-bluetooth |
 
 > 旧名 `miniprogram-bluetooth-utils` 已废弃，一律使用新名。仅历史日志与早期 change-log 保留旧名快照。
 

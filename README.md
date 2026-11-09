@@ -45,7 +45,7 @@ import { BLEHandler } from "easy-miniprogram-bluetooth";
 npx skills add https://github.com/ShiroPrism/easy-miniprogram-bluetooth --skill easy-miniprogram-bluetooth
 ```
 
-> 该 Skill 对应库版本 **0.4.1**，示例与 API 说明均以该版本为准。
+> 该 Skill 对应库版本 **0.4.2**，示例与 API 说明均以该版本为准。
 
 装好后可按名字显式调用 `easy-miniprogram-bluetooth`，助手也会依据描述自动触发（例如「用微信小程序蓝牙连接设备并收发数据」）。它会引导助手：
 

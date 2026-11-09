@@ -1,6 +1,6 @@
 {
   "name": "easy-miniprogram-bluetooth",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "微信小程序低功耗蓝牙（BLE）工具封装",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -44,7 +44,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShiroPrism/easy-miniprogram-bluetooth"
+    "url": "git+https://github.com/ShiroPrism/easy-miniprogram-bluetooth.git"
   },
   "bugs": {
     "url": "https://github.com/ShiroPrism/easy-miniprogram-bluetooth/issues"

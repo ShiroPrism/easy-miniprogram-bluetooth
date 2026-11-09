@@ -2,7 +2,7 @@
 name: easy-miniprogram-bluetooth
 description: 'This skill should be used when working with 微信小程序蓝牙 / WeChat Mini Program BLE (Bluetooth Low Energy) using the easy-miniprogram-bluetooth library — adapter init, device discovery with keyword filters, connect/disconnect, service and characteristic validation, notification subscription, data frame read/write with optional response waiting, auto-reconnect, and lifecycle release. It covers dependency installation, the current API surface, the standard encapsulation pattern (app-level singleton plus cross-page reuse), parameter and return contracts, common WeChat BLE error codes, and copy-paste example code. Trigger keywords include 微信小程序, 蓝牙, WeChat Mini Program, BLE, Bluetooth Low Energy, easy-miniprogram-bluetooth.'
 argument-hint: '目标设备的服务/特征值 UUID、单设备或多设备、以及业务收发需求'
-version: 0.4.1
+version: 0.4.2
 library: easy-miniprogram-bluetooth
 keywords:
   - miniprogram
@@ -23,7 +23,7 @@ agent_created: true
 
 # 小程序蓝牙极速接入（easy-miniprogram-bluetooth）
 
-> **适用版本**：`easy-miniprogram-bluetooth@0.4.1`。本 Skill 描述的 API、类型与返回结构均以该版本为准；目标项目装的版本低于 0.4.1 时，先按 §2 升级再使用，否则引入路径与类型产物形态会不一致。
+> **适用版本**：`easy-miniprogram-bluetooth@0.4.2`。本 Skill 描述的 API、类型与返回结构均以该版本为准；目标项目装的版本低于 0.4.2 时，先按 §2 升级再使用，否则引入路径与类型产物形态会不一致。
 
 ## 1. 适用场景
 
@@ -63,24 +63,24 @@ node -p "(()=>{try{require('fs').accessSync('node_modules/easy-miniprogram-bluet
 # 必须用 npm install，不能加 -D / --save-dev：
 # 微信开发者工具只扫描 dependencies 下的包参与「构建 npm」，devDependencies 不会被编译
 # 建议锁定到本 Skill 描述的版本，避免 API 语义随 minor 漂移
-npm install easy-miniprogram-bluetooth@^0.4.1
+npm install easy-miniprogram-bluetooth@^0.4.2
 ```
 
 已安装的项目，用同一条命令核对版本是否满足：
 
 ```bash
-# 输出已安装版本，与本 Skill 的 0.4.1 比对
+# 输出已安装版本，与本 Skill 的 0.4.2 比对
 node -p "require('./node_modules/easy-miniprogram-bluetooth/package.json').version"
 ```
 
-版本低于 `0.4.1` 时，**先提示用户升级**再写代码：0.4.1 之前 ESM 产物名为 `index.esm.js`（按包名或目录短路径引入会失败）、类型声明是多文件树且公共类型无法从包根导入，写法与本 Skill 不通用。
+版本低于 `0.4.2` 时，**先提示用户升级**再写代码：0.4.1 之前 ESM 产物名为 `index.esm.js`（按包名或目录短路径引入会失败）、类型声明是多文件树且公共类型无法从包根导入，写法与本 Skill 不通用。
 
 安装后需要确认的三件事：
 
 | 事项 | 说明 |
 | --- | --- |
 | 落到 `dependencies` | `package.json` 的 `dependencies` 中应出现 `easy-miniprogram-bluetooth`；若误装进 `devDependencies`，先 `npm uninstall` 再按上条重装 |
-| 版本 ≥ 0.4.1 | 低于该版本先升级（见上一段） |
+| 版本 ≥ 0.4.2 | 低于该版本先升级（见上一段） |
 | 执行「构建 npm」 | 这是**微信开发者工具里的手动操作，助手无法代劳**，需提示用户在 IDE 中执行：工具 → 构建 npm |
 
 无法执行「构建 npm」时的降级方案：把本库 `dist/` 目录拷进小程序项目（例如放到 `utils/dist/`），再按相对路径引入 `../../utils/dist`（对应 `dist/index.js`）。
